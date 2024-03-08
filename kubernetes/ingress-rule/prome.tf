@@ -12,14 +12,14 @@ resource "kubernetes_ingress_v1" "prome-ingress" {
 
   spec {
     rule {
-      host = "grafana.nwokolo.live"
+      host = "grafana.awspro.com.ng"
       http {
         path {
           backend {
             service{
               name = "prometheus-grafana"
               port {
-               number = 9090
+               number = 80
                }
           }
         }
